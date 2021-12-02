@@ -54,3 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['api/mahasiswa'] = 'api/GetMahasiswa/index';
+$route['api/mahasiswa/nim/(:any)'] = 'api/GetMahasiswa/MahasiswaById/$1';
+$route['api/mahasiswa/add'] = 'api/GetMahasiswa/AddMahasiswa';
+$route['api/mahasiswa/update/(:any)'] = 'api/GetMahasiswa/UpdateMahasiswa/$1';
+$route['api/mahasiswa/delete/(:any)'] = 'api/GetMahasiswa/DeleteMahasiswa/$1';
